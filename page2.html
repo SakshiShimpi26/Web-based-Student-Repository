@@ -1,0 +1,134 @@
+<html>
+    <head>
+        <title>home page</title>
+    <link rel="Stylesheet" href="stylep2.css">
+    </head>
+    <body>
+        <div class="web-bag">
+                <div class="container">
+                    <img id="logo" src="logo.png" onclick="demo()">
+                    <div class="lo">
+                    <select >
+                        <option value=""></option>
+                        <option value="">Profile</option>
+                        <option value="">Log Out</option>
+                    </select>
+                </div>
+                <div class ="form-box">
+                    <h1>Study Repository</h1>
+                    <div class="Branch">
+            <select name="branches" id="branch">
+                <option value="branh">Branch</option>
+                <option value="AIDS"> AIDS </option>
+                <option value="Computer"> Computer </option>
+                <option value="IT"> IT </option>
+                <option value="Civil"> Civil </option>
+                <option value="Robotics"> Robotics </option>
+            </select>
+                    </div>
+            <div class="Semester">
+            <select name="semesters" id="sem" onchange="subjectSelect()">
+                <option value="semst">Semester</option>
+                <option value="1st Sem"> 1st Sem </option>
+                <option value="2nd Sem"> 2nd Sem </option>
+                <option value="3rd Sem"> 3rd Sem </option>
+                <option value="4th Sem"> 4th Sem </option>
+                <option value="5th Sem"> 5th Sem </option>
+                <option value="6th Sem"> 6th Sem </option>
+                <option value="7th Sem"> 7th Sem </option>
+                <option value="8th Sem"> 8th Sem </option>
+            </select>
+            </div>
+            <div id="container"></div>
+        <script>
+            function subjectSelect()
+            {
+                var sem1Subjects = ["Subjects","Engineering Mechanics", "System in Mechanical Engg", "Basic Electronics", "Engineering Mathematics I","Engineering Physics"];
+                var sem2Subjects = ["Subjects","Engineering Graphics", "Basic Electrical Engg", "Engineering Mathematics II", "Engineering Chemistry","Programming & Problem Solving"];
+                var sem3Subjects = ["Subjects","Discrete Maths", "Fundamental Data Structures", "Object Oriented Programming", "Computer Graphics","Operating System"];
+                var sem4Subjects = ["Subjects","Statistics", "Internet Of Things", "Software Engineering", "Data Structure & Algorithms","Management Information System"];
+                var sem5Subjects = ["Subjects","Database Management System", "Computer Networks", "Web Technology", "Artificial Intelligence","Human Computer Interface"];
+                var sem6Subjects = ["Subjects","Data Science", "Cyber Security", "Artificial Neural Network"];
+
+                var select = document.createElement("select");
+                select.name = "Sem_Sub";
+                select.id = "semSub"
+
+                var sems = document.getElementById('sem');
+                var semsval=sems.value;
+                if(semsval=="1st Sem")
+                {
+                    for (const val of sem1Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }  
+                    document.getElementById("container").appendChild(select);
+                }
+                if(semsval=="2nd Sem")
+                {
+                    for (const val of sem2Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }
+                    document.getElementById("container").appendChild(select);
+                }
+                if(semsval=="3rd Sem")
+                {
+                    for (const val of sem3Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }
+                    document.getElementById("container").appendChild(select);
+                }
+                if(semsval=="4th Sem")
+                {
+                    for (const val of sem4Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }                    
+                    document.getElementById("container").appendChild(select);                    
+                }
+                if(semsval=="5th Sem")
+                {
+                    for (const val of sem5Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }
+                    document.getElementById("container").appendChild(select);
+                }
+                if(semsval=="6th Sem")
+                {
+                    for (const val of sem6Subjects)
+                    {
+                        var option = document.createElement("option");
+                        option.value = val;
+                        option.text = val.charAt(0).toUpperCase() + val.slice(1);
+                        select.appendChild(option);
+                    }
+                    document.getElementById("container").appendChild(select);
+                }
+            }
+        </script>
+                <div class = "btn">
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

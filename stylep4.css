@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hero{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(banner.webp);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: rgb(238, 197, 197);
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 25px;
+    text-align: center;
+}
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f ,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+    font-family: Algerian;
+}
+select, select option {
+    background-color: #edc7ae;
+    border-left: 1px solid #111010;
+    color: black;
+}
+.btn{
+    position: relative;
+    display: flex;
+    width: 280px;
+    transition: .5s;
+    padding-left: 20px;
+    border-radius: 30px;
+    justify-content: end;
+}
+.submit-btn{
+    width: 300px;
+    height: 40px;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #ff105f ,#ffad06);
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 40px;
+    left : 43px;
+}
